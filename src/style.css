@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@source './**/*.html';
+
+@theme {
+  --font-display: "Xmind", sans-serif;
+  --font-mulish: "Mulish", sans-serif;
+  --font-rokkitt: "Rokkitt", serif;
+}

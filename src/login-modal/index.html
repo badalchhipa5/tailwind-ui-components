@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Login Modal</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../bundle.css" />
+    <script defer src="../bundle.js"></script>
+  </head>
+  <body class="font-mulish">
+    <div class="flex justify-center items-center min-h-screen bg-red-100">
+      <div
+        class="flex rounded-xl bg-white shadow-xl relative overflow-hidden m-2"
+      >
+        <!-- close -->
+        <div
+          class="flex justify-center items-center bg-gray-200 rounded-full hover:bg-gray-300 absolute top-2 right-2 cursor-pointer w-10 h-10 duration-300"
+        >
+          X
+        </div>
+
+        <!-- Content -->
+        <div class="flex flex-col p-8 lg:p-20">
+          <h2 class="text-4xl font-bold font-rokkitt">Log In</h2>
+          <p class="text-gray-400 text-sm mt-2">
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </p>
+
+          <!-- Input area -->
+          <input
+            type="text"
+            class="rounded-sm p-4 placeholder:text-light text-sm outline outline-slate-200 mt-12"
+            placeholder="Enter your email address"
+          />
+          <!-- buttons -->
+          <div
+            class="flex flex-col space-y-4 md:flex-row items-center text-sm mt-6 justify-between"
+          >
+            <a href="#" class="text-cyan-600 font-thin">Forgot password?</a>
+            <button
+              class="w-full md:w-1/2 flex justify-center items-center text-white bg-cyan-800 rounded-sm shadow-xl hover:-translate-y-0.5 cursor-pointer hover:shadow-2xl duration-400 p-4 space-x-2"
+            >
+              <span> Next </span><span>&rarr;</span>
+            </button>
+          </div>
+          <!-- partition div -->
+          <div class="w-full border-t border-slate-200 mt-12 lg:mt-24"></div>
+
+          <!-- Login options -->
+          <p class="text-sm font-thin text-slate-400 mt-6 text-center">
+            Or log in with
+          </p>
+          <div
+            class="flex flex-col md:flex-row mt-4 items-center md:space-x-4 space-y-4 md:space-y-0"
+          >
+            <button
+              class="w-full md:w-1/2 flex items-center justify-center space-x-2 border p-2 rounded-sm border-slate-300 hover:-translate-y-1 duration-150 cursor-pointer text-slate-400 hover:bg-slate-300 transition-all hover:shadow-2xl"
+            >
+              <img
+                src="./images/facebook.png"
+                alt="facebook Image"
+                class="w-8 h-8"
+              />
+              <span>Facebook</span>
+            </button>
+            <button
+              class="w-full md:w-1/2 flex items-center justify-center space-x-2 border p-2 rounded-sm border-slate-300 hover:-translate-y-1 duration-150 cursor-pointer text-slate-400 hover:bg-slate-300 transition-all hover:shadow-2xl"
+            >
+              <img
+                src="./images/google.png"
+                alt="Google Image"
+                class="w-8 h-8"
+              />
+              <span>Google</span>
+            </button>
+          </div>
+        </div>
+
+        <img
+          src="images/image.jpg"
+          alt="Ocean Image"
+          class="hidden lg:block w-107.5"
+        />
+      </div>
+    </div>
+  </body>
+</html>
